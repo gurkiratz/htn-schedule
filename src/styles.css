@@ -511,6 +511,15 @@ body {
   outline-offset: -2px;
 }
 
+.fc .fc-event.is-past {
+  opacity: 0.42;
+  filter: grayscale(0.65);
+}
+.fc .fc-list-event.is-past td { color: var(--text-3); }
+.fc .fc-list-event.is-past .ev__title,
+.fc .fc-list-event.is-past .ev__loc { color: var(--text-3); }
+.fc .fc-event.is-past:hover { opacity: 0.7; filter: grayscale(0.25); }
+
 /* List view */
 .fc .fc-list { border-radius: var(--radius-sm); border-color: var(--border); }
 .fc .fc-list-day-cushion { background: var(--surface-2); }

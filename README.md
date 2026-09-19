@@ -13,3 +13,7 @@ npm run build    # static files in dist/
 ```
 
 Events live in `src/data/events.json`. Times are Waterloo o'clock on purpose.
+
+`schedule.html` is the actual HTML I pulled from [the official schedule](https://my.hackthenorth.com/schedule). `npm run extract` turns that dump into the json.
+
+> Made with Claude Opus 5 and Cursor Grok 4.6 in around 30 minutes.

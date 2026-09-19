@@ -59,12 +59,18 @@ export default function App() {
   const [detail, setDetail] = useState(null);
   const [picked, setPicked] = useState(() => new Set());
   const [query, setQuery] = useState("");
+  const [now, setNow] = useState(() => wallNow(schedule.timezone));
 
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 720px)");
     const onChange = (e) => setIsMobile(e.matches);
     mq.addEventListener("change", onChange);
     return () => mq.removeEventListener("change", onChange);
+  }, []);
+
+  useEffect(() => {
+    const id = setInterval(() => setNow(wallNow(schedule.timezone)), 60_000);
+    return () => clearInterval(id);
   }, []);
 
   const events = useMemo(
@@ -85,12 +91,14 @@ export default function App() {
           title: e.title,
           start: e.start,
           end: e.end === e.start ? undefined : e.end,
-          classNames: picked.has(e.id)
-            ? [`cat-${e.category}`, "is-picked"]
-            : [`cat-${e.category}`],
+          classNames: [
+            `cat-${e.category}`,
+            picked.has(e.id) ? "is-picked" : "",
+            isPastEvent(e, now) ? "is-past" : "",
+          ].filter(Boolean),
           extendedProps: e,
         })),
-    [selected, query, picked, activeDay]
+    [selected, query, picked, activeDay, now]
   );
 
   const goToView = useCallback(
@@ -427,6 +435,33 @@ export default function App() {
       )}
     </div>
   );
+}
+
+function wallNow(timeZone) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  }).formatToParts(new Date());
+  const get = (type) => parts.find((p) => p.type === type)?.value;
+  const hour = get("hour") === "24" ? "00" : get("hour");
+  return `${get("year")}-${get("month")}-${get("day")}T${hour}:${get("minute")}:${get("second")}`;
+}
+
+/** Open-ended / all-day-ish blocks stay coloured — hacking, hardware hub, etc. */
+function isOpenWindow(event) {
+  const ms = new Date(`${event.end}Z`) - new Date(`${event.start}Z`);
+  return ms >= 8 * 60 * 60 * 1000;
+}
+
+function isPastEvent(event, now) {
+  if (isOpenWindow(event)) return false;
+  return now >= event.end;
 }
 
 function eventOverlapsDay(event, day) {
