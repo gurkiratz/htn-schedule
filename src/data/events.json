@@ -1,0 +1,793 @@
+{
+  "name": "Hack the North 2026",
+  "timezone": "America/Toronto",
+  "rangeStart": "2026-09-18",
+  "rangeEnd": "2026-09-21",
+  "generatedFrom": "schedule.html",
+  "events": [
+    {
+      "id": "hacker-tree-story-colouring-activity-0918-1500",
+      "title": "Hacker Tree + Story Colouring Activity",
+      "location": "PSE 1ST FLOOR",
+      "start": "2026-09-18T15:00:00",
+      "end": "2026-09-19T12:00:00",
+      "category": "activity"
+    },
+    {
+      "id": "sponsor-volunteer-registration-0918-1500",
+      "title": "Sponsor/Volunteer Registration",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-18T15:00:00",
+      "end": "2026-09-18T17:00:00",
+      "category": "logistics"
+    },
+    {
+      "id": "hacker-registration-0918-1730",
+      "title": "Hacker Registration",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-18T17:30:00",
+      "end": "2026-09-18T23:00:00",
+      "category": "logistics"
+    },
+    {
+      "id": "hardware-sponsor-showcase-0918-1730",
+      "title": "Hardware Sponsor Showcase",
+      "location": "ROBOHUB",
+      "start": "2026-09-18T17:30:00",
+      "end": "2026-09-18T19:30:00",
+      "category": "logistics"
+    },
+    {
+      "id": "balloon-animals-0918-1730",
+      "title": "Balloon Animals",
+      "location": "PSE MAIN FOYER",
+      "start": "2026-09-18T17:30:00",
+      "end": "2026-09-18T19:30:00",
+      "category": "activity"
+    },
+    {
+      "id": "dinner-0918-1800",
+      "title": "Dinner",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-18T18:00:00",
+      "end": "2026-09-19T00:00:00",
+      "category": "food"
+    },
+    {
+      "id": "opening-ceremonies-0918-2000",
+      "title": "Opening Ceremonies",
+      "location": "LAZARIDIS HALL",
+      "start": "2026-09-18T20:00:00",
+      "end": "2026-09-18T22:00:00",
+      "category": "ceremony"
+    },
+    {
+      "id": "mentorship-cafe-0918-2130",
+      "title": "Mentorship Cafe",
+      "location": "PSE 1ST FLOOR",
+      "start": "2026-09-18T21:30:00",
+      "end": "2026-09-18T22:00:00",
+      "category": "activity"
+    },
+    {
+      "id": "temporary-tattoos-0918-2130",
+      "title": "Temporary Tattoos",
+      "location": "PSE MAIN FOYER",
+      "start": "2026-09-18T21:30:00",
+      "end": "2026-09-18T23:30:00",
+      "category": "activity"
+    },
+    {
+      "id": "hardware-reservation-begins-0918-2200",
+      "title": "Hardware Reservation Begins",
+      "location": "QNX MAKERSPACE - HARDWARE HUB (PSE 1427)",
+      "start": "2026-09-18T22:00:00",
+      "end": "2026-09-18T22:00:00",
+      "category": "logistics"
+    },
+    {
+      "id": "evening-snack-sponsored-by-netic-0918-2200",
+      "title": "Evening Snack (Sponsored by Netic)",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-18T22:00:00",
+      "end": "2026-09-19T00:30:00",
+      "category": "food"
+    },
+    {
+      "id": "td-workshop-0918-2300",
+      "title": "TD Workshop",
+      "location": "ROOM 5B (PSE 5353)",
+      "start": "2026-09-18T23:00:00",
+      "end": "2026-09-18T23:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "federato-api-workshop-0918-2300",
+      "title": "Federato API Workshop",
+      "location": "SPONSOR EVENT ROOMS A AND B (PSE 2324/2328)",
+      "start": "2026-09-18T23:00:00",
+      "end": "2026-09-18T23:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "warp-api-workshop-0918-2300",
+      "title": "Warp API Workshop",
+      "location": "ROOM 3A (PSE 3343)",
+      "start": "2026-09-18T23:00:00",
+      "end": "2026-09-18T23:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "internship-maxxing-workshop-with-victoria-da-rosa-0918-2300",
+      "title": "Internship Maxxing Workshop with Victoria Da Rosa",
+      "location": "ROOM 4C (PSE 4417)",
+      "start": "2026-09-18T23:00:00",
+      "end": "2026-09-19T00:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "rbc-api-workshop-0918-2330",
+      "title": "RBC API Workshop",
+      "location": "ROOM 3B (PSE 3353)",
+      "start": "2026-09-18T23:30:00",
+      "end": "2026-09-19T00:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "zip-api-workshop-0918-2330",
+      "title": "Zip API Workshop",
+      "location": "ROOM 4A (PSE 4043)",
+      "start": "2026-09-18T23:30:00",
+      "end": "2026-09-19T00:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "clash-royale-tournament-0919-0000",
+      "title": "Clash Royale Tournament",
+      "location": "ACTIVITIES ROOM (PSE 1331)",
+      "start": "2026-09-19T00:00:00",
+      "end": "2026-09-19T02:00:00",
+      "category": "activity"
+    },
+    {
+      "id": "rox-api-workshop-0919-0000",
+      "title": "Rox API Workshop",
+      "location": "ROOM 3A (PSE 3343)",
+      "start": "2026-09-19T00:00:00",
+      "end": "2026-09-19T00:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "expo-api-workshop-0919-0000",
+      "title": "Expo API Workshop",
+      "location": "SPONSOR EVENT ROOMS A AND B (PSE 2324/2328)",
+      "start": "2026-09-19T00:00:00",
+      "end": "2026-09-19T00:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "hardware-checkout-0919-0000",
+      "title": "Hardware Checkout",
+      "location": "QNX MAKERSPACE - HARDWARE HUB (PSE 1427)",
+      "start": "2026-09-19T00:00:00",
+      "end": "2026-09-19T04:00:00",
+      "category": "logistics"
+    },
+    {
+      "id": "thru-labs-api-workshop-0919-0000",
+      "title": "Thru Labs API Workshop",
+      "location": "ROOM 5B (PSE 5353)",
+      "start": "2026-09-19T00:00:00",
+      "end": "2026-09-19T00:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "hacking-0919-0000",
+      "title": "Hacking",
+      "location": "PSE",
+      "start": "2026-09-19T00:00:00",
+      "end": "2026-09-19T08:00:00",
+      "category": "logistics"
+    },
+    {
+      "id": "bracketbot-api-workshop-0919-0030",
+      "title": "BracketBot API Workshop",
+      "location": "ROOM 4A (PSE 4043)",
+      "start": "2026-09-19T00:30:00",
+      "end": "2026-09-19T01:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "qnx-api-workshop-0919-0030",
+      "title": "QNX API Workshop",
+      "location": "ROOM 3B (PSE 3353)",
+      "start": "2026-09-19T00:30:00",
+      "end": "2026-09-19T01:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "3d-printing-friday-night-0919-0030",
+      "title": "3D Printing - Friday Night",
+      "location": "PSE",
+      "start": "2026-09-19T00:30:00",
+      "end": "2026-09-19T04:00:00",
+      "category": "logistics"
+    },
+    {
+      "id": "solana-api-workshop-0919-0030",
+      "title": "Solana API Workshop",
+      "location": "ROOM 4B (PSE 4053)",
+      "start": "2026-09-19T00:30:00",
+      "end": "2026-09-19T01:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "how-to-win-in-three-minutes-workshop-with-melda-kiziltan-0919-0030",
+      "title": "How to Win in Three Minutes Workshop with Melda Kiziltan",
+      "location": "ROOM 4C (PSE 4417)",
+      "start": "2026-09-19T00:30:00",
+      "end": "2026-09-19T01:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "cse-api-workshop-0919-0100",
+      "title": "CSE API Workshop",
+      "location": "ROOM 5B (PSE 5353)",
+      "start": "2026-09-19T01:00:00",
+      "end": "2026-09-19T01:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "elastic-api-workshop-0919-0100",
+      "title": "Elastic API Workshop",
+      "location": "SPONSOR EVENT ROOMS A AND B (PSE 2324/2328)",
+      "start": "2026-09-19T01:00:00",
+      "end": "2026-09-19T01:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "late-night-ramen-0919-0100",
+      "title": "Late Night Ramen",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-19T01:00:00",
+      "end": "2026-09-19T06:00:00",
+      "category": "food"
+    },
+    {
+      "id": "openai-api-workshop-0919-0100",
+      "title": "OpenAI API Workshop",
+      "location": "ROOM 3A (PSE 3343)",
+      "start": "2026-09-19T01:00:00",
+      "end": "2026-09-19T01:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "composio-api-workshop-0919-0130",
+      "title": "Composio API Workshop",
+      "location": "ROOM 3B (PSE 3353)",
+      "start": "2026-09-19T01:30:00",
+      "end": "2026-09-19T02:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "sentry-api-workshop-0919-0130",
+      "title": "Sentry API Workshop",
+      "location": "ROOM 4A (PSE 4043)",
+      "start": "2026-09-19T01:30:00",
+      "end": "2026-09-19T02:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "breakfast-0919-0800",
+      "title": "Breakfast",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-19T08:00:00",
+      "end": "2026-09-19T10:30:00",
+      "category": "food"
+    },
+    {
+      "id": "mlh-hacking-with-github-copilot-sponsored-by-mlh-0919-0900",
+      "title": "MLH: Hacking with GitHub Copilot (Sponsored by MLH)",
+      "location": "SPONSOR EVENT ROOMS A AND B (PSE 2324/2328)",
+      "start": "2026-09-19T09:00:00",
+      "end": "2026-09-19T09:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "federato-coffee-chats-0919-0900",
+      "title": "Federato Coffee Chats",
+      "location": "JUDGING ROOMS C-D (PSE 2342, 2344)",
+      "start": "2026-09-19T09:00:00",
+      "end": "2026-09-19T13:00:00",
+      "category": "talk"
+    },
+    {
+      "id": "dominion-dynamics-coffee-chats-0919-0900",
+      "title": "Dominion Dynamics Coffee Chats",
+      "location": "JUDGING ROOMS E-F (PSE 2346, 2348) AND G (PSE 2352)",
+      "start": "2026-09-19T09:00:00",
+      "end": "2026-09-19T13:00:00",
+      "category": "talk"
+    },
+    {
+      "id": "3d-printing-saturday-0919-0900",
+      "title": "3D Printing - Saturday",
+      "location": "PSE",
+      "start": "2026-09-19T09:00:00",
+      "end": "2026-09-20T02:00:00",
+      "category": "logistics"
+    },
+    {
+      "id": "hardware-hub-open-0919-0900",
+      "title": "Hardware Hub Open",
+      "location": "QNX MAKERSPACE - HARDWARE HUB (PSE 1427)",
+      "start": "2026-09-19T09:00:00",
+      "end": "2026-09-20T02:00:00",
+      "category": "logistics"
+    },
+    {
+      "id": "shopify-coffee-chats-0919-0900",
+      "title": "Shopify Coffee Chats",
+      "location": "JUDGING ROOMS H-L (PSE 2454 - 2464)",
+      "start": "2026-09-19T09:00:00",
+      "end": "2026-09-19T17:00:00",
+      "category": "talk"
+    },
+    {
+      "id": "jeff-nguyen-recruiting-101-workshop-0919-0930",
+      "title": "Jeff Nguyen: Recruiting 101 Workshop",
+      "location": "ROOM 3B (PSE 3353)",
+      "start": "2026-09-19T09:30:00",
+      "end": "2026-09-19T10:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "mlh-intro-to-google-ai-studio-sponsored-by-mlh-0919-0930",
+      "title": "MLH: Intro to Google AI Studio (Sponsored by MLH)",
+      "location": "SPONSOR EVENT ROOMS A AND B (PSE 2324/2328)",
+      "start": "2026-09-19T09:30:00",
+      "end": "2026-09-19T10:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "rocket-lightning-challenge-sponsored-by-rocket-0919-1000",
+      "title": "Rocket Lightning Challenge (Sponsored by Rocket)",
+      "location": "ROOM 3A (PSE 3343)",
+      "start": "2026-09-19T10:00:00",
+      "end": "2026-09-19T10:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "inside-the-hiring-room-panel-0919-1030",
+      "title": "Inside the Hiring Room Panel",
+      "location": "ROOM 7A (PSE 7303/7363) FAC HALL",
+      "start": "2026-09-19T10:30:00",
+      "end": "2026-09-19T11:30:00",
+      "category": "talk"
+    },
+    {
+      "id": "virtu-api-workshop-0919-1030",
+      "title": "Virtu API Workshop",
+      "location": "ROOM 5B (PSE 5353)",
+      "start": "2026-09-19T10:30:00",
+      "end": "2026-09-19T11:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "dominion-dynamics-api-workshop-0919-1030",
+      "title": "Dominion Dynamics API Workshop",
+      "location": "SPONSOR EVENT ROOMS A AND B (PSE 2324/2328)",
+      "start": "2026-09-19T10:30:00",
+      "end": "2026-09-19T11:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "warp-lightning-challenge-sponsored-by-warp-0919-1100",
+      "title": "Warp Lightning Challenge (Sponsored by Warp)",
+      "location": "ROOM 3A (PSE 3343)",
+      "start": "2026-09-19T11:00:00",
+      "end": "2026-09-19T11:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "hacker-badge-workshop-0919-1130",
+      "title": "Hacker Badge Workshop",
+      "location": "ROOM 3B (PSE 3353)",
+      "start": "2026-09-19T11:30:00",
+      "end": "2026-09-19T12:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "lelamp-workshop-sponsored-by-lelamp-0919-1130",
+      "title": "LeLamp Workshop (Sponsored by LeLamp)",
+      "location": "ROOM 5B (PSE 5353)",
+      "start": "2026-09-19T11:30:00",
+      "end": "2026-09-19T12:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "rox-lightning-challenge-sponsored-by-rox-0919-1200",
+      "title": "Rox Lightning Challenge (Sponsored by Rox)",
+      "location": "ROOM 3A (PSE 3343)",
+      "start": "2026-09-19T12:00:00",
+      "end": "2026-09-19T12:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "mini-fun-fair-0919-1200",
+      "title": "Mini Fun Fair",
+      "location": "PSE 1ST FLOOR",
+      "start": "2026-09-19T12:00:00",
+      "end": "2026-09-19T14:00:00",
+      "category": "activity"
+    },
+    {
+      "id": "temporary-tattoos-0919-1200",
+      "title": "Temporary Tattoos",
+      "location": "PSE MAIN FOYER",
+      "start": "2026-09-19T12:00:00",
+      "end": "2026-09-19T14:00:00",
+      "category": "activity"
+    },
+    {
+      "id": "federato-meetup-sponsored-by-federato-0919-1200",
+      "title": "Federato Meetup (Sponsored by Federato)",
+      "location": "ROOM 5A (PSE 5343)",
+      "start": "2026-09-19T12:00:00",
+      "end": "2026-09-19T12:30:00",
+      "category": "talk"
+    },
+    {
+      "id": "lunch-0919-1200",
+      "title": "Lunch",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-19T12:00:00",
+      "end": "2026-09-19T15:00:00",
+      "category": "food"
+    },
+    {
+      "id": "tether-api-workshop-0919-1230",
+      "title": "Tether API Workshop",
+      "location": "SPONSOR EVENT ROOMS A AND B (PSE 2324/2328)",
+      "start": "2026-09-19T12:30:00",
+      "end": "2026-09-19T13:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "google-api-workshop-0919-1230",
+      "title": "Google API Workshop",
+      "location": "ROOM 5B (PSE 5353)",
+      "start": "2026-09-19T12:30:00",
+      "end": "2026-09-19T13:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "agree-to-disagree-vc-panel-0919-1230",
+      "title": "Agree to Disagree VC Panel",
+      "location": "ROOM 7A (PSE 7303/7363) FAC HALL",
+      "start": "2026-09-19T12:30:00",
+      "end": "2026-09-19T13:30:00",
+      "category": "talk"
+    },
+    {
+      "id": "aramco-lightning-challenge-sponsored-by-aramco-0919-1300",
+      "title": "Aramco Lightning Challenge (Sponsored by Aramco)",
+      "location": "ROOM 3A (PSE 3343)",
+      "start": "2026-09-19T13:00:00",
+      "end": "2026-09-19T13:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "gptzero-api-workshop-0919-1330",
+      "title": "GPTZero API Workshop",
+      "location": "SPONSOR EVENT ROOMS A AND B (PSE 2324/2328)",
+      "start": "2026-09-19T13:30:00",
+      "end": "2026-09-19T14:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "linq-api-workshop-0919-1330",
+      "title": "Linq API Workshop",
+      "location": "ROOM 4B (PSE 4053)",
+      "start": "2026-09-19T13:30:00",
+      "end": "2026-09-19T14:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "amazon-coffee-chats-0919-1330",
+      "title": "Amazon Coffee Chats",
+      "location": "JUDGING ROOMS E-F (PSE 2346, 2348)",
+      "start": "2026-09-19T13:30:00",
+      "end": "2026-09-19T17:00:00",
+      "category": "talk"
+    },
+    {
+      "id": "browserbase-api-workshop-0919-1330",
+      "title": "Browserbase API Workshop",
+      "location": "ROOM 5B (PSE 5353)",
+      "start": "2026-09-19T13:30:00",
+      "end": "2026-09-19T14:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "openai-codex-your-fifth-teammate-at-hack-the-north-0919-1400",
+      "title": "OpenAI - Codex: Your Fifth Teammate at Hack the North",
+      "location": "ROOM 7A (PSE 7303/7363) FAC HALL",
+      "start": "2026-09-19T14:00:00",
+      "end": "2026-09-19T14:30:00",
+      "category": "talk"
+    },
+    {
+      "id": "hrt-lightning-challenge-sponsored-by-hrt-0919-1400",
+      "title": "HRT Lightning Challenge (Sponsored by HRT)",
+      "location": "ROOM 3A (PSE 3343)",
+      "start": "2026-09-19T14:00:00",
+      "end": "2026-09-19T14:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "rbc-meetup-sponsored-by-rbc-0919-1400",
+      "title": "RBC Meetup (Sponsored by RBC)",
+      "location": "ROOM 5A (PSE 5343)",
+      "start": "2026-09-19T14:00:00",
+      "end": "2026-09-19T14:30:00",
+      "category": "talk"
+    },
+    {
+      "id": "therapy-dogs-0919-1430",
+      "title": "Therapy Dogs",
+      "location": "ACTIVITIES ROOM (PSE 1331)",
+      "start": "2026-09-19T14:30:00",
+      "end": "2026-09-19T16:00:00",
+      "category": "activity"
+    },
+    {
+      "id": "logitech-api-workshop-0919-1430",
+      "title": "Logitech API Workshop",
+      "location": "SPONSOR EVENT ROOMS A AND B (PSE 2324/2328)",
+      "start": "2026-09-19T14:30:00",
+      "end": "2026-09-19T15:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "amazon-api-workshop-0919-1430",
+      "title": "Amazon API Workshop",
+      "location": "ROOM 5B (PSE 5353)",
+      "start": "2026-09-19T14:30:00",
+      "end": "2026-09-19T15:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "big-tech-startups-panel-0919-1430",
+      "title": "Big Tech <-> Startups Panel",
+      "location": "ROOM 4A (PSE 4043)",
+      "start": "2026-09-19T14:30:00",
+      "end": "2026-09-19T15:30:00",
+      "category": "talk"
+    },
+    {
+      "id": "rbc-power-hour-sponsored-by-rbc-0919-1500",
+      "title": "RBC Power Hour (Sponsored by RBC)",
+      "location": "ROOM 4C (PSE 4417)",
+      "start": "2026-09-19T15:00:00",
+      "end": "2026-09-19T17:00:00",
+      "category": "talk"
+    },
+    {
+      "id": "pearl-sullivan-hack-the-north-scholarship-award-meetup-0919-1500",
+      "title": "Pearl Sullivan Hack the North Scholarship Award Meetup",
+      "location": "PSE MAIN FOYER",
+      "start": "2026-09-19T15:00:00",
+      "end": "2026-09-19T16:00:00",
+      "category": "talk"
+    },
+    {
+      "id": "cohere-exploring-multi-agent-collaboration-with-cohere-0919-1500",
+      "title": "Cohere - Exploring Multi-Agent Collaboration with Cohere",
+      "location": "ROOM 7A (PSE 7303/7363) FAC HALL",
+      "start": "2026-09-19T15:00:00",
+      "end": "2026-09-19T15:30:00",
+      "category": "talk"
+    },
+    {
+      "id": "bubble-tea-snack-sponsored-by-fantuan-0919-1530",
+      "title": "Bubble Tea Snack (Sponsored by Fantuan)",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-19T15:30:00",
+      "end": "2026-09-19T17:30:00",
+      "category": "food"
+    },
+    {
+      "id": "huawei-api-workshop-0919-1530",
+      "title": "Huawei API Workshop",
+      "location": "SPONSOR EVENT ROOMS A AND B (PSE 2324/2328)",
+      "start": "2026-09-19T15:30:00",
+      "end": "2026-09-19T16:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "360-photo-booth-0919-1600",
+      "title": "360 Photo Booth",
+      "location": "PSE MAIN FOYER",
+      "start": "2026-09-19T16:00:00",
+      "end": "2026-09-19T19:00:00",
+      "category": "activity"
+    },
+    {
+      "id": "uber-meetup-sponsored-by-uber-0919-1600",
+      "title": "Uber Meetup (Sponsored by Uber)",
+      "location": "ROOM 5A (PSE 5343)",
+      "start": "2026-09-19T16:00:00",
+      "end": "2026-09-19T16:30:00",
+      "category": "talk"
+    },
+    {
+      "id": "building-in-public-panel-0919-1630",
+      "title": "Building in Public Panel",
+      "location": "ROOM 4A (PSE 4043)",
+      "start": "2026-09-19T16:30:00",
+      "end": "2026-09-19T17:30:00",
+      "category": "talk"
+    },
+    {
+      "id": "dryft-api-workshop-0919-1630",
+      "title": "Dryft API Workshop",
+      "location": "SPONSOR EVENT ROOMS A AND B (PSE 2324/2328)",
+      "start": "2026-09-19T16:30:00",
+      "end": "2026-09-19T17:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "jane-street-capital-system-jitter-0919-1700",
+      "title": "Jane Street Capital - System Jitter",
+      "location": "ROOM 7A (PSE 7303/7363) FAC HALL",
+      "start": "2026-09-19T17:00:00",
+      "end": "2026-09-19T17:45:00",
+      "category": "talk"
+    },
+    {
+      "id": "ctf-meetup-0919-1700",
+      "title": "CTF Meetup",
+      "location": "ROOM 3A (PSE 3343)",
+      "start": "2026-09-19T17:00:00",
+      "end": "2026-09-19T18:00:00",
+      "category": "talk"
+    },
+    {
+      "id": "local-llms-101-workshop-with-matthew-yang-0919-1700",
+      "title": "Local LLMs 101 Workshop with Matthew Yang",
+      "location": "ROOM 3B (PSE 3353)",
+      "start": "2026-09-19T17:00:00",
+      "end": "2026-09-19T18:00:00",
+      "category": "workshop"
+    },
+    {
+      "id": "dinner-0919-1800",
+      "title": "Dinner",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-19T18:00:00",
+      "end": "2026-09-19T21:30:00",
+      "category": "food"
+    },
+    {
+      "id": "nikhil-kanade-prompt-to-pwn-workshop-0919-1830",
+      "title": "Nikhil Kanade: Prompt to Pwn Workshop",
+      "location": "ROOM 3B (PSE 3353)",
+      "start": "2026-09-19T18:30:00",
+      "end": "2026-09-19T19:30:00",
+      "category": "workshop"
+    },
+    {
+      "id": "hackathon-world-panel-0919-1830",
+      "title": "Hackathon -> World Panel",
+      "location": "ROOM 4A (PSE 4043)",
+      "start": "2026-09-19T18:30:00",
+      "end": "2026-09-19T19:30:00",
+      "category": "talk"
+    },
+    {
+      "id": "dessert-snack-sponsored-by-conrad-0919-2030",
+      "title": "Dessert Snack (Sponsored by Conrad)",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-19T20:30:00",
+      "end": "2026-09-19T22:30:00",
+      "category": "food"
+    },
+    {
+      "id": "poker-tournament-sponsored-by-citadel-0919-2030",
+      "title": "Poker Tournament (Sponsored by Citadel)",
+      "location": "ACTIVITIES ROOM (PSE 1331)",
+      "start": "2026-09-19T20:30:00",
+      "end": "2026-09-19T22:00:00",
+      "category": "activity"
+    },
+    {
+      "id": "karaoke-0919-2100",
+      "title": "Karaoke",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-19T21:00:00",
+      "end": "2026-09-19T23:00:00",
+      "category": "activity"
+    },
+    {
+      "id": "walking-tacos-snack-0920-0030",
+      "title": "Walking Tacos Snack",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-20T00:30:00",
+      "end": "2026-09-20T02:30:00",
+      "category": "food"
+    },
+    {
+      "id": "overnight-ramen-0920-0300",
+      "title": "Overnight Ramen",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-20T03:00:00",
+      "end": "2026-09-20T07:00:00",
+      "category": "food"
+    },
+    {
+      "id": "breakfast-0920-0800",
+      "title": "Breakfast",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-20T08:00:00",
+      "end": "2026-09-20T10:00:00",
+      "category": "food"
+    },
+    {
+      "id": "judging-0920-0800",
+      "title": "Judging",
+      "location": "PSE JUDGING ROOMS",
+      "start": "2026-09-20T08:00:00",
+      "end": "2026-09-20T14:00:00",
+      "category": "ceremony"
+    },
+    {
+      "id": "hardware-return-0920-1000",
+      "title": "Hardware Return",
+      "location": "QNX MAKERSPACE - HARDWARE HUB (PSE 1427)",
+      "start": "2026-09-20T10:00:00",
+      "end": "2026-09-20T14:00:00",
+      "category": "logistics"
+    },
+    {
+      "id": "lunch-0920-1100",
+      "title": "Lunch",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-20T11:00:00",
+      "end": "2026-09-20T13:00:00",
+      "category": "food"
+    },
+    {
+      "id": "soda-lab-sponsored-by-omen-0920-1200",
+      "title": "Soda Lab (Sponsored by OMEN)",
+      "location": "RBC OASIS TENT",
+      "start": "2026-09-20T12:00:00",
+      "end": "2026-09-20T14:00:00",
+      "category": "food"
+    },
+    {
+      "id": "hacky-hour-0920-1200",
+      "title": "Hacky Hour",
+      "location": "DESIGN BAY",
+      "start": "2026-09-20T12:00:00",
+      "end": "2026-09-20T14:00:00",
+      "category": "food"
+    },
+    {
+      "id": "closing-ceremonies-0920-1430",
+      "title": "Closing Ceremonies",
+      "location": "LAZARIDIS HALL",
+      "start": "2026-09-20T14:30:00",
+      "end": "2026-09-20T16:30:00",
+      "category": "ceremony"
+    },
+    {
+      "id": "hardware-return-finalists-0920-1600",
+      "title": "Hardware Return - Finalists",
+      "location": "QNX MAKERSPACE - HARDWARE HUB (PSE 1427)",
+      "start": "2026-09-20T16:00:00",
+      "end": "2026-09-20T16:30:00",
+      "category": "logistics"
+    }
+  ]
+}

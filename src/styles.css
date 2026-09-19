@@ -1,0 +1,740 @@
+/* ---------------------------------------------------------------- tokens */
+:root {
+  color-scheme: light;
+
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --surface-2: #f1f3f6;
+  --border: #e3e6ec;
+  --border-strong: #cdd3dd;
+  --text: #11151c;
+  --text-2: #5b6472;
+  --text-3: #8b94a3;
+  --accent: #1f2a44;
+  --accent-ink: #ffffff;
+  --cta: #0e7a70;
+  --cta-ink: #ffffff;
+  --cta-hover: #0b5f57;
+  --ring: #7c8db5;
+  --now: #e0483c;
+
+  --cat-ceremony: #b4375f;
+  --cat-workshop: #2f6fd0;
+  --cat-talk: #7a4bd0;
+  --cat-food: #c26816;
+  --cat-activity: #1d8a6a;
+  --cat-logistics: #56616f;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 1px 2px rgb(16 24 40 / 0.05);
+  --shadow-lg: 0 24px 48px -12px rgb(16 24 40 / 0.22);
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --bg: #0e1117;
+    --surface: #161a22;
+    --surface-2: #1d222c;
+    --border: #262c38;
+    --border-strong: #363e4d;
+    --text: #e9ecf1;
+    --text-2: #a3adbb;
+    --text-3: #77818f;
+    --accent: #e9ecf1;
+    --accent-ink: #11151c;
+    --cta: #2ec9b3;
+    --cta-ink: #062520;
+    --cta-hover: #5ee0cd;
+    --ring: #6e83b0;
+
+    --cat-ceremony: #ef6f95;
+    --cat-workshop: #6ba4f0;
+    --cat-talk: #ab86ef;
+    --cat-food: #e8a15d;
+    --cat-activity: #45bf9b;
+    --cat-logistics: #93a0b1;
+
+    --shadow-lg: 0 24px 48px -12px rgb(0 0 0 / 0.6);
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.5 ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ------------------------------------------------------------- structure */
+.app {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: calc(24px + var(--safe-top)) 20px calc(40px + var(--safe-bottom));
+}
+
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 20px;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.masthead h1 {
+  margin: 0;
+  font-size: clamp(24px, 5vw, 34px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  color: var(--text-2);
+  font-size: 14px;
+}
+
+.contrib {
+  margin: 12px 0 0;
+}
+.contrib a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 11px 4px;
+  border: 1px solid color-mix(in srgb, var(--cta) 45%, var(--border));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--cta) 8%, var(--surface));
+  color: var(--cta);
+  font-family: Caveat, 'Segoe Print', cursive;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  transform: rotate(-1.2deg);
+  transform-origin: left center;
+  transition: transform 140ms ease, background 140ms ease;
+}
+.contrib a:hover {
+  background: color-mix(in srgb, var(--cta) 14%, var(--surface));
+  transform: rotate(0deg);
+}
+
+/* --------------------------------------------------------------- buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-weight: 550;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: background 120ms ease, border-color 120ms ease, transform 120ms ease;
+}
+.btn:hover { background: var(--surface-2); }
+.btn:active { transform: translateY(1px); }
+.btn--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.btn--primary:hover { filter: brightness(1.12); background: var(--accent); }
+.btn--ghost { border-color: transparent; background: transparent; box-shadow: none; }
+.btn--ghost:hover { background: var(--surface-2); }
+
+:where(button, a, input, [tabindex]):focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* -------------------------------------------------------------- controls */
+.controls {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  display: grid;
+  gap: 12px;
+  padding: 12px 0;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+.controls__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.segmented,
+.daypicker {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.segmented button,
+.daypicker button {
+  border: 0;
+  background: transparent;
+  color: var(--text-2);
+  font: inherit;
+  font-weight: 550;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.segmented button {
+  min-height: 32px;
+  padding: 0 14px;
+}
+.segmented button.is-active,
+.daypicker button.is-active {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+.segmented button:not(.is-active):hover,
+.daypicker button:not(.is-active):hover { background: var(--surface-2); color: var(--text); }
+
+.daypicker button {
+  display: grid;
+  justify-items: center;
+  gap: 1px;
+  min-width: 46px;
+  padding: 4px 8px;
+  line-height: 1.1;
+}
+.daypicker__dow { font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.75; }
+.daypicker button.is-today .daypicker__num { position: relative; }
+.daypicker button.is-today .daypicker__num::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  border-radius: 50%;
+  background: var(--now);
+}
+.daypicker__num { font-size: 15px; font-weight: 650; }
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 200px;
+  min-width: 0;
+  max-width: 320px;
+  margin-left: auto;
+  padding: 0 12px;
+  height: 38px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text-3);
+  box-shadow: var(--shadow-sm);
+}
+.search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  outline: none;
+}
+.search input::-webkit-search-cancel-button { filter: grayscale(1); }
+
+/* ---------------------------------------------------------------- chips */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 30px;
+  padding: 0 11px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 550;
+  cursor: pointer;
+  transition: opacity 120ms ease, background 120ms ease;
+}
+.chip__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--chip, var(--text-3));
+}
+.chip--ceremony { --chip: var(--cat-ceremony); }
+.chip--workshop { --chip: var(--cat-workshop); }
+.chip--talk { --chip: var(--cat-talk); }
+.chip--food { --chip: var(--cat-food); }
+.chip--activity { --chip: var(--cat-activity); }
+.chip--logistics { --chip: var(--cat-logistics); }
+.chip.is-off { opacity: 0.42; background: transparent; }
+.chip.is-off .chip__dot { background: var(--text-3); }
+.chip--reset { color: var(--text-2); }
+.chip--static { cursor: default; margin-bottom: 10px; }
+
+/* ------------------------------------------------------------- calendar */
+.calendar-wrap {
+  position: relative;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+.empty {
+  margin: 0;
+  padding: 40px 16px;
+  text-align: center;
+  color: var(--text-2);
+}
+
+.fc {
+  --fc-border-color: var(--border);
+  --fc-page-bg-color: var(--surface);
+  --fc-neutral-bg-color: var(--surface-2);
+  --fc-today-bg-color: color-mix(in srgb, var(--cat-workshop) 7%, transparent);
+  --fc-now-indicator-color: var(--now);
+  --fc-list-event-hover-bg-color: var(--surface-2);
+  --fc-small-font-size: 12px;
+  --ev: var(--cat-logistics);
+  font-family: inherit;
+}
+
+.fc .fc-timegrid-slot { height: 3.8em; }
+.fc .fc-timegrid-slot-label,
+.fc .fc-timegrid-axis-cushion {
+  color: var(--text-3);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.fc .fc-col-header-cell {
+  padding: 8px 0;
+  background: var(--surface);
+  font-weight: 600;
+}
+.fc .fc-col-header-cell-cushion {
+  padding: 4px 6px;
+  color: var(--text-2);
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.01em;
+}
+.fc .fc-day-today .fc-col-header-cell-cushion { color: var(--text); font-weight: 700; }
+.fc-theme-standard td, .fc-theme-standard th { border-color: var(--border); }
+.fc .fc-timegrid-slot-minor { border-top-style: dotted; }
+
+/* Event blocks — colour by category, flat and legible rather than saturated. */
+.fc .fc-timegrid-event,
+.fc .fc-daygrid-event {
+  border: 1px solid color-mix(in srgb, var(--ev) 38%, transparent);
+  border-left: 3px solid var(--ev);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--ev) 12%, var(--surface));
+  box-shadow: none;
+  padding: 0;
+  transition: background 110ms ease;
+}
+.fc .fc-timegrid-event:hover { background: color-mix(in srgb, var(--ev) 18%, var(--surface)); }
+.fc .fc-timegrid-event-harness { cursor: pointer; }
+
+.cat-ceremony { --ev: var(--cat-ceremony); }
+.cat-workshop { --ev: var(--cat-workshop); }
+.cat-talk { --ev: var(--cat-talk); }
+.cat-food { --ev: var(--cat-food); }
+.cat-activity { --ev: var(--cat-activity); }
+.cat-logistics { --ev: var(--cat-logistics); }
+
+/* Tints need more weight to separate on a dark ground. */
+@media (prefers-color-scheme: dark) {
+  .fc .fc-timegrid-event,
+  .fc .fc-daygrid-event {
+    background: color-mix(in srgb, var(--ev) 18%, var(--surface));
+    border-color: color-mix(in srgb, var(--ev) 55%, transparent);
+  }
+  .fc .fc-timegrid-event:hover { background: color-mix(in srgb, var(--ev) 34%, var(--surface)); }
+}
+
+.fc .fc-timegrid-event .fc-event-main {
+  overflow: hidden;
+  height: 100%;
+  container-type: size;
+}
+
+.ev {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  height: 100%;
+  padding: 3px 5px;
+  overflow: hidden;
+  line-height: 1.2;
+  color: var(--text);
+}
+.ev__time {
+  font-size: 10px;
+  line-height: 1.3;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: color-mix(in srgb, var(--ev) 70%, var(--text-2));
+}
+.ev__title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+/* Shed detail as the block shrinks, rather than clip a line in half. The block
+   is a size container, so this reacts to the rendered height — an event split
+   across midnight is short even though its duration is long. */
+@container (max-height: 76px) {
+  .ev__title { -webkit-line-clamp: 2; }
+  .ev__loc { display: none; }
+}
+/* Too cramped to hold a checkbox without covering the title — the detail sheet
+   still offers one for these. Only reserve room for it where it is shown. */
+@container (max-height: 46px) {
+  .pick { display: none; }
+}
+@container (max-width: 104px) {
+  .pick { display: none; }
+}
+@container (min-width: 105px) and (min-height: 47px) {
+  .ev__time { padding-right: 20px; }
+}
+@container (max-height: 42px) {
+  .ev { flex-direction: row; align-items: baseline; gap: 5px; }
+  .ev__time { white-space: nowrap; }
+  .ev__title { -webkit-line-clamp: 1; white-space: nowrap; }
+}
+
+.ev__loc {
+  font-size: 10.5px;
+  color: var(--text-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Multi-select checkbox. Always visible in list rows; on grid blocks it waits
+   for hover or focus unless it is already checked. */
+.pick {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 1.5px solid var(--border-strong);
+  border-radius: 6px;
+  background: var(--surface);
+  color: transparent;
+  cursor: pointer;
+  transition: background 110ms ease, border-color 110ms ease, opacity 110ms ease;
+}
+.pick:hover { border-color: var(--accent); }
+.pick.is-on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.fc-timegrid-event .pick {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 18px;
+  height: 18px;
+  opacity: 0;
+}
+.fc-timegrid-event:hover .pick,
+.fc-timegrid-event:focus-within .pick,
+.fc-timegrid-event .pick.is-on { opacity: 1; }
+
+/* A checked block stays legible even where the box itself is hidden. */
+.fc .fc-event.is-picked {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+/* List view */
+.fc .fc-list { border-radius: var(--radius-sm); border-color: var(--border); }
+.fc .fc-list-day-cushion { background: var(--surface-2); }
+.fc .fc-list-day-text { color: var(--text); font-weight: 650; text-decoration: none; }
+.fc .fc-day-today .fc-list-day-cushion {
+  background: color-mix(in srgb, var(--cat-workshop) 14%, var(--surface-2));
+  box-shadow: inset 3px 0 0 var(--cat-workshop);
+}
+.fc .fc-list-event { cursor: pointer; }
+.fc .fc-list-event td { padding: 11px 12px; border-color: var(--border); }
+.fc .fc-list-event-time { color: var(--text-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.fc .fc-list-event-dot {
+  border-color: var(--ev);
+  border-width: 5px;
+}
+.fc .fc-list-event:hover td { background: var(--surface-2); }
+.fc .fc-list-event .ev--list {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0;
+}
+.ev__text { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.fc .fc-list-event .ev--list .ev__title { font-size: 14px; }
+.fc .fc-list-event .ev--list .ev__loc { font-size: 12px; white-space: normal; }
+.fc .fc-list-empty { background: transparent; color: var(--text-2); }
+
+/* "+N more" strip shown when too many events overlap to render side by side. */
+.fc .fc-timegrid-more-link {
+  border: 1px dashed var(--border-strong);
+  border-radius: 6px;
+  background: var(--surface-2);
+  color: var(--text-2);
+  font-size: 11px;
+  font-weight: 650;
+  box-shadow: none;
+  cursor: pointer;
+}
+.fc .fc-timegrid-more-link:hover { background: var(--border); color: var(--text); }
+.fc .fc-timegrid-more-link-inner { padding: 4px 3px; }
+
+.fc .fc-popover {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+.fc .fc-popover-header {
+  padding: 10px 12px;
+  background: var(--surface-2);
+  color: var(--text);
+  font-weight: 650;
+}
+.fc .fc-popover-body { padding: 8px; max-height: 60vh; overflow-y: auto; }
+.fc .fc-popover-body .fc-timegrid-event { margin-bottom: 4px; }
+.fc .fc-popover-close { opacity: 0.6; }
+
+.fc .fc-timegrid-now-indicator-line { border-width: 2px 0 0; }
+.fc .fc-timegrid-now-indicator-arrow { border-width: 5px; }
+
+/* ---------------------------------------------------------------- sheet */
+.scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgb(9 12 18 / 0.5);
+  backdrop-filter: blur(3px);
+  animation: fade 140ms ease;
+}
+
+.sheet {
+  width: min(460px, 100%);
+  max-height: 88vh;
+  overflow-y: auto;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+  animation: pop 160ms cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+.sheet:focus { outline: none; }
+.sheet__grip { display: none; }
+.sheet h2 {
+  margin: 0 0 16px;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.meta { margin: 0 0 20px; display: grid; gap: 14px; }
+.meta dt {
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+.meta dd { margin: 3px 0 0; font-size: 15px; }
+.meta__next { color: var(--text-3); font-size: 13px; }
+
+.sheet__actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.sheet__actions--secondary { margin-top: 8px; }
+.sheet__actions .btn { flex: 1 1 auto; }
+
+/* ------------------------------------------------------- selection bar */
+.selbar {
+  position: fixed;
+  left: 50%;
+  bottom: calc(18px + var(--safe-bottom));
+  z-index: 30;
+  translate: -50% 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: max-content;
+  max-width: calc(100vw - 24px);
+  padding: 10px 10px 10px 18px;
+  border: 1px solid var(--cta);
+  border-radius: 999px;
+  background: var(--cta);
+  color: var(--cta-ink);
+  box-shadow: var(--shadow-lg);
+  animation: rise 180ms cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+.selbar__count { margin: 0; font-size: 14px; color: color-mix(in srgb, var(--cta-ink) 72%, transparent); white-space: nowrap; }
+.selbar__count strong { color: var(--cta-ink); font-variant-numeric: tabular-nums; }
+.selbar__actions { display: flex; align-items: center; gap: 6px; }
+.selbar .btn { min-height: 36px; border-radius: 999px; }
+.selbar .btn--ghost { color: var(--cta-ink); }
+.selbar .btn--ghost:hover { background: color-mix(in srgb, var(--cta-ink) 12%, transparent); }
+.selbar .btn--primary {
+  background: var(--cta-ink);
+  border-color: var(--cta-ink);
+  color: var(--cta);
+  filter: none;
+}
+.selbar .btn--primary:hover {
+  filter: none;
+  background: color-mix(in srgb, var(--cta-ink) 88%, var(--cta));
+  border-color: transparent;
+}
+
+@keyframes rise { from { opacity: 0; transform: translateY(12px); } }
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 64px;
+  color: var(--text-3);
+  font-size: 13px;
+  text-align: center;
+}
+.footer p { margin: 0; }
+
+@keyframes fade { from { opacity: 0; } }
+@keyframes pop { from { opacity: 0; transform: translateY(8px) scale(0.98); } }
+
+/* ----------------------------------------------------------- responsive */
+@media (max-width: 720px) {
+  .app { padding: calc(16px + var(--safe-top)) 12px calc(24px + var(--safe-bottom)); }
+  .masthead { padding-bottom: 14px; }
+  .masthead .btn { width: 100%; }
+  .controls { padding: 10px 0; }
+  .controls__row { gap: 8px; }
+  .daypicker { flex: 1 1 auto; }
+  .daypicker button { flex: 1; min-width: 0; }
+  .search { max-width: none; margin-left: 0; flex-basis: 100%; order: 3; }
+  .calendar-wrap { padding: 4px; }
+  .fc .fc-list-event td { padding: 10px 10px; }
+  .fc .fc-popover { width: min(92vw, 380px); }
+
+  /* Filters scroll horizontally instead of stacking four rows deep. */
+  .filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+    margin: 0 -12px;
+    padding-inline: 12px;
+  }
+  .filters::-webkit-scrollbar { display: none; }
+  .chip { flex: 0 0 auto; }
+
+  /* Detail panel becomes a bottom sheet. */
+  .scrim { place-items: end center; padding: 0; }
+  .sheet {
+    width: 100%;
+    max-height: 82vh;
+    border-radius: 18px 18px 0 0;
+    padding: 12px 18px calc(22px + var(--safe-bottom));
+    animation: slide 200ms cubic-bezier(0.2, 0.9, 0.3, 1);
+  }
+  .sheet__grip {
+    display: block;
+    width: 38px;
+    height: 4px;
+    margin: 0 auto 14px;
+    border-radius: 999px;
+    background: var(--border-strong);
+  }
+  .sheet__actions .btn { flex: 1 1 100%; }
+
+  .selbar {
+    left: 12px;
+    right: 12px;
+    bottom: calc(12px + var(--safe-bottom));
+    width: auto;
+    max-width: none;
+    translate: none;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 10px 10px 14px;
+  }
+  .selbar__count { font-size: 13px; }
+}
+
+@keyframes slide { from { transform: translateY(100%); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
