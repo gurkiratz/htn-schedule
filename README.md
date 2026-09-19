@@ -1,6 +1,6 @@
 # HTN 2026 schedule
 
-A slightly nicer way to stare at the Hack the North calendar.
+A slightly nicer way to stare at the [official Hack the North calendar](https://my.hackthenorth.com/schedule).
 
 List / day / week, tap a category, grab an `.ics`, go to a workshop. That's the whole app. No account, no backend, no "syncing your vibes."
 

@@ -406,9 +406,10 @@ export default function App() {
 
       <footer className="footer">
         <p className="font-mono">
-          {schedule.events.length} events · Times shown in EST. Built by{" "}
-          <a href="https://gurkiratsingh.xyz">Gurkirat</a> at Hack the North
-          2026.
+          {schedule.events.length} events · Times shown in EST · Sourced from the{" "}
+          <a href="https://my.hackthenorth.com/schedule">official schedule</a>.
+          Built by <a href="https://gurkiratsingh.xyz">Gurkirat</a> at Hack the
+          North 2026.
         </p>
       </footer>
 
